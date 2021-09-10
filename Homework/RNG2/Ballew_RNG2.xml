@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Ballew_RNG2.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+        <h><b>Kinzua Bridge State Park</b></h>
+            <para>The 339-acre <place what="statepark">Kinzua Bridge State Park</place>, located in <location>McKean County</location>,
+            is the home of the reinvented Kinzua Viaduct.</para>
+            <para>The Viaduct, once the longest and tallest railroad structure at <measurement long="2053">2,053</measurement> feet long and<measurement        
+                high="301">301</measurement> feet high, was partially destroyed by a tornado during 2003.</para>
+            <para>Reinvented as a pedestrian walkway during <time>2011</time>, visitors can stroll 600 feet out on the remaining support towers, peer miles out into the Kinzua                     Gorge, and gaze down through the partial glass platform at the end of the walkway.</para>
+            <para>The Kinzua Bridge State Park Visitor Center and Park Office features great views, self-guiding exhibits, and information about the surrounding area.</para>
+            <para>Picnicking and trail opportunities are available. Fish for native brook trout in Kinzua Creek. The Kinzua Bridge Scenic Byway is a designated shared use                              hike/bike corridor.</para>
+    <h><b>Skywalk Advisory</b></h>
+            <para>The skywalk will be open unless weather conditions are unsafe due to frost and ice in late fall through winter. Contact the park for current conditions.</para>
+    <h><b>Recreational Advisory</b></h>
+            <para>Due to unsafe conditions in the area of the downed towers, visitors are prohibited from walking under the skywalk and in the surrounding area as indicated on                     the map.</para>
+    <h><b>Seasons and Hours</b></h>
+            <para>The park is open every day of the year, sunrise to sunset. Day use areas close at dusk.</para>
+            <para>The visitor center and park office is open specific hours:    
+                January 1 to mid-March (prior to daylight savings) -- <days week="open">Open Monday to Saturday</days>, <time>8:00 A.M. to 4:00 P.M</time>., closed most <day week="closed" >Sundays</day>. Open on Sundays of holiday weekends.
+                <month>Mid-March</month> to early <month>November</month> (during daylight savings) -- Open 7 days-a-week, <time>8:00 A.M. to 6:00 P.M</time>.
+                 Early <month>November</month> (after daylight savings) to <month>December</month> 31 -- Open 7 days-a-week, <time>8:00 A.M. to 4:00 P.M</time>. 
+                Closed on <holidays day= "closed">Thanksgiving Day and Christmas Day.</holidays>
+                Contact the <contact who="parkOffice">park office</contact> for additional facility seasons and hours.</para>
+</xml>
