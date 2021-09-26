@@ -1,0 +1,41 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = xml
+xml = element xml {mixed{(h | para)*}}
+# ebb: How can the xml root element be empty? empty means the element is
+# self-closing with nothing at all inside except maybe attributes.
+# Hint: The reason that <para> elements are not allowed in your file is because
+# you have not indicated that they are supposed to appear inside this element. 
+
+h = element h {para*, text}
+# ebb: Looking at your <h> element in the XML, I don't see that it contains text. 
+# It does contain a <b> element, though.
+
+# I changed some suff around and got it to work!
+
+
+
+para = element para {mixed{(place | location | measurement | time | days | month | holidays | contact)* }}
+# ebb: This is good work with representing mixed content and allowing any of these elements in any order.
+# But isn't it confusing to have a <days> element and a day attribute? I think that caused some confusion
+# later in your schema...You might want to revise your XML code to make it easier to follow!
+# It is not usually a good idea to use element and attribute names that are very similar to each other.
+
+place = element place {what, text}
+what = attribute what {"statepark", empty}
+location = element location {text}
+measurement = element measurement {mixed{(long | high)* }}
+long = attribute long {"2053"}
+high = attribute high {"301"}
+time = element time {text}
+days = element days {week, text}
+week = attribute week {"open" | "closed"}
+when = attribute when {"closed"}
+
+# ebb: In your XML, day is an attribute, not an element.
+# Also, it does not contain a week attribute since day is only an attribute. 
+
+month = element month {text}
+holidays = element holidays {when, text}
+contact = element contact {who, text}
+who = attribute who {"parkOffice"}
